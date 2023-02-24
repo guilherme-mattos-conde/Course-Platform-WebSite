@@ -1,0 +1,168 @@
+/* TABLET */
+@media (max-width: 1199px) {
+	
+	/* NOSSOS CURSOS */
+	.conteudoPrincipal-cursos-link {
+		flex-basis: 32%;
+	}
+	.conteudoPrincipal-cursos-link:nth-child(4n) {
+		margin-right: auto;
+	}
+	.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+		margin-left: auto;
+	}
+	.conteudoPrincipal-cursos-link:nth-child(-n+4) {
+		margin-top: auto;
+	}
+	.conteudoPrincipal-cursos-link:nth-last-child(-n+2) {
+		margin-bottom: auto;
+	}
+	.conteudoPrincipal-cursos-link:nth-child(3n) {
+		margin-right: 0;
+	}
+	.conteudoPrincipal-cursos-link:nth-child(3n+1) {
+		margin-left: 0;
+	}
+	.conteudoPrincipal-cursos-link:nth-child(-n+3) {
+		margin-top: 0;
+	}
+	.conteudoPrincipal-cursos-link:nth-last-child(-n+3) {
+		margin-bottom: 0;
+	}
+
+	/* MAPA DE CURSOS */
+	.lista-mapaCursos ul {
+		flex-flow: column wrap;
+		height: 485px;
+		justify-content: normal;
+		align-items: center;
+	}
+	.lista-mapaCursos li {
+		margin-bottom: 30px;
+	}
+	.lista-mapaCursos li:nth-child(2n) {
+		margin-bottom: 0px;
+	}
+
+	/* VANTAGENS */
+	.videoSobre .container {
+		flex-flow: column wrap;
+	}
+	.videoSobre-video {
+		min-width: none;
+		max-width: none;
+		width: 80%;
+		min-height: none;
+		max-height: none;
+		height: 32vw;
+	}
+	.videoSobre-sobre {
+		margin: 0 0 50px 0;
+	}
+}
+@media (max-width: 849px) {
+	
+	/* NOSSOS CURSOS */
+	.conteudoPrincipal-cursos-link {
+		flex-basis: 49%;
+	}
+	.conteudoPrincipal-cursos-link:nth-child(3n) {
+		margin-right: auto;
+	}
+	.conteudoPrincipal-cursos-link:nth-child(3n+1) {
+		margin-left: auto;
+	}
+	.conteudoPrincipal-cursos-link:nth-child(-n+3) {
+		margin-top: auto;
+	}
+	.conteudoPrincipal-cursos-link:nth-last-child(-n+3) {
+		margin-bottom: auto;
+	}
+	.conteudoPrincipal-cursos-link:nth-child(2n) {
+		margin-right: 0;
+	}
+	.conteudoPrincipal-cursos-link:nth-child(2n+1) {
+		margin-left: 0;
+	}
+	.conteudoPrincipal-cursos-link:nth-child(-n+2) {
+		margin-top: 0;
+	}
+	.conteudoPrincipal-cursos-link:nth-last-child(-n+2) {
+		margin-bottom: 0;
+	}
+}
+
+/* MOBILE */
+@media (max-width: 599px) {
+	
+	/* CONTEUDO */
+	.subtitulo {
+		font-size: 25px;
+	}
+
+	/* NOSSOS CURSOS */
+	.conteudoPrincipal-cursos {
+		width: 300px;
+	}
+	.conteudoPrincipal-cursos-link {
+		flex-basis: 100%;
+	}
+	.conteudoPrincipal-cursos-link {
+		margin: 0;
+		margin-bottom: 5%;
+	}
+	.conteudoPrincipal-cursos-link:nth-last-child(-n+3) {
+		margin-bottom: 5%;
+	}
+	.conteudoPrincipal-cursos-link:last-child {
+		margin-bottom: 0;
+	}
+
+	/* MAPA DE CURSOS */
+	.lista-mapaCursos ul {
+		flex-flow: column wrap;
+		height: auto;
+		justify-content: normal;
+		align-items: center;
+	}
+	.lista-mapaCursos li {
+		margin-bottom: 30px;
+		width: 240px;
+	}
+	.lista-mapaCursos li:nth-child(2n) {
+		margin-bottom: auto;
+	}
+
+	/* VANTAGENS */
+	.videoSobre {
+		background: var(--fundo4);
+		margin: 70px auto;
+	}
+	.videoSobre .container {
+		flex-flow: column wrap;
+		width: 100%;
+	}
+	.videoSobre-video {
+		min-width: none;
+		max-width: none;
+		width: 90%;
+		min-height: none;
+		max-height: none;
+		height: 50vw;
+	}
+	.videoSobre-sobre {
+		margin: 0 auto 50px auto;
+		font-size: 1em;
+		line-height: 1.8;
+	}
+	.videoSobre-sobre-list {
+		padding: 15px 0 25px 20px;
+	}
+
+	/* RODAPÉ */
+	.lista-rodape {
+		flex-direction: column;
+		height: 180px;
+		justify-content: space-between;
+	}
+}
