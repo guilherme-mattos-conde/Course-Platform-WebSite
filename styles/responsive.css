@@ -1,0 +1,124 @@
+/* TABLET */
+@media (max-width: 1200px) {
+	/* MAPA DE CURSOS */
+	#lista-cursos ul {
+        flex-flow: column wrap;
+		align-items: center;
+		height: 485px;
+    }
+
+	/* VANTAGENS */
+    #vantagens {
+        justify-content: center;
+    }
+	#vantagens .container {
+		flex-flow: column wrap;
+	}
+	#video {
+		min-width: 60%;
+		max-width: 70%;
+		min-height: 33vw;
+		max-height: 43vw;
+	}
+	#vantagens .container {
+		margin: 30px 0 0 0;
+	}
+}
+
+@media (max-width: 900px) {
+    /* NOSSOS CURSOS */
+    #grade-cursos .cursos {
+        flex-basis: 31.3%;
+    }
+	/* VANTAGENS */
+	#video {
+		min-width: 85%;
+		max-width: 95%;
+		min-height: 43vw;
+		max-height: 53vw;
+	}
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+    /* MENU */
+    .item-menu {
+        display: none;
+    }
+
+	/* CONTEUDO */
+	.subtitulo {
+		font-size: 25px;
+	}
+
+	/* NOSSOS CURSOS */
+    #grade-cursos .cursos {
+        flex-basis: 48%;
+    }
+
+    /* MAPA DE CURSOS */
+	#lista-cursos ul {
+        align-items: normal;
+		height: auto;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+	/* VANTAGENS */
+	#video {
+		min-width: 85%;
+		max-width: 95%;
+		min-height: 43vw;
+		max-height: 53vw;
+	}
+
+	/* MAPA DE CURSOS */
+	.lista-mapaCursos ul {
+		flex-flow: column wrap;
+		height: auto;
+		justify-content: normal;
+		align-items: center;
+	}
+	.lista-mapaCursos li {
+		margin-bottom: 30px;
+		width: 240px;
+	}
+	.lista-mapaCursos li:nth-child(2n) {
+		margin-bottom: auto;
+	}
+
+	/* VANTAGENS */
+	#vantagens .container {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 500px) {
+    /* CONTEUDO */
+	.subtitulo {
+		font-size: 20px;
+	}
+
+	/* NOSSOS CURSOS */
+    #grade-cursos .cursos {
+        flex-basis: 98%;
+    }
+
+    /* MAPA DE CURSOS */
+	#lista-cursos ul {
+        align-items: normal;
+		height: auto;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+	/* VANTAGENS */
+	#video {
+		min-width: 100%;
+	}
+
+	/* VANTAGENS */
+	#vantagens .container {
+        font-size: .9em;
+    }
+}

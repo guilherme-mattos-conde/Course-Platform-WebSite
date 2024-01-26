@@ -1,0 +1,122 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    color: var(--cor-texto2);
+}
+fieldset {
+    margin-bottom: 30px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px var(--cor-fundo5);
+    border: 2px solid var(--cor-fundo5);
+    background: var(--cor-fundo2);
+}
+h2 {
+    font-size: 23pt;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+h3 {
+    font-size: 15pt;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.div-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+}
+.input {
+    width: 100%;
+    font-size: 11pt;
+    padding: 5px 10px;
+    height: 30px;
+    outline: 0;
+    border-radius: 10px;
+    border: 2px solid var(--cor-fundo5);
+    color: var(--cor-texto2);
+    box-sizing: border-box;
+    background: var(--cor-fundo2);
+}
+.erro {
+    width: 100%;
+    font-size: 11pt;
+    padding: 5px 10px;
+    height: 30px;
+    outline: 0;
+    border-radius: 10px;
+    border: 2px solid var(--cor-erro);
+    color: var(--cor-texto2);
+    box-sizing: border-box;
+    background: var(--cor-fundo2);
+}
+#mensagem-erro {
+    margin-top: 15px;
+    color: var(--cor-erro);
+    font-weight: bold;
+}
+.div-input div {
+    position: relative;
+    margin: 1%;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 11pt;
+    font-weight: bold;
+    transition: .5s;
+    transform: translateY(-50%);
+}
+.label-focus {
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    font-size: 9pt;
+    font-weight: bold;
+    transition: .5s;
+}
+#confirmar-senha-div {
+    display: none;
+}
+#requisitos {
+    display: none;
+    flex-direction: column;
+}
+#requisitos div {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+#requisitos img {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+}
+#requisitos p {
+    font-size: 10pt;
+}
+#botao-enviar {
+	border-radius: 8px;
+	background-color: var(--cor-fundo5);
+	width: 200px;
+	color: var(--cor-texto1);
+	font-weight: bold;
+	border: none;
+	height: 50px;
+	font-size: 1em;
+	transition: .5s;
+}
+#botao-enviar:hover {
+	cursor: pointer;
+	transform: scale(1.04);
+}

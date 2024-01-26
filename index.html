@@ -1,148 +1,92 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Alurinha | Cursos online</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="icon" href="img/logos/logo-alura.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alurinha | Cursos online</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/responsive.css">
+	<link rel="icon" href="./assets/logo-alura.jpg">
 </head>
 <body>
-
-	<header class="cabecalhoPrincipal">
+    <header id="cabecalho">
 		<div class="container">
-			<h1 class="cabecalhoPrincipal-titulo">
-				<a href="#">Alurinha</a>
+			<h1 class="titulo">
+				<a href="index.html">Alurinha</a>
 			</h1>
 
-			<nav class="cabecalhoPrincipal-nav">
-				<a class="cabecalhoPrincipal-nav-link" href="#">Home</a>
-				<a class="cabecalhoPrincipal-nav-link" href="#">Cursos</a>
-				<a class="cabecalhoPrincipal-nav-link" href="#">Sobre nós</a>
-				<a class="cabecalhoPrincipal-nav-link" href="#">Contato</a>
-				<a class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app" href="#">Nosso APP</a>
+			<nav>
+				<a class="item-menu" onclick="mostrarSecao('cursos')">Cursos</a>
+				<a class="item-menu" onclick="mostrarSecao('categorias')">Categorias</a>
+				<a class="item-menu" onclick="mostrarSecao('vantagens')">Vantagens</a>
+				<a id="botao-menu" href="form-cadastro.html">Cadastre-se</a>
 			</nav>
 		</div>
-
 	</header>
 
-	<main class="conteudoPrincipal">
-		<div class="container">
-			<h2 class="subtitulo">Nossos cursos</h2>
-
-			<nav>
-				<ul class="conteudoPrincipal-cursos">
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Java</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">PHP</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Ruby on Rails</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">.NET</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Pascal</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Flexbox</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Desenvolvimento Web</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Java Web</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Javascript</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">AngularJS</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">TDD com C</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Redes de computadores</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">MySQL</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">MariaDB</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Postegres</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Lógica de programação</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Lógica de programação</a></li>
-					<li class="conteudoPrincipal-cursos-link"><a href="#">Lógica de programação</a></li>
-				</ul>
-			</nav>
-		</div>
-
-		<section class="mapaCursos">
+	<main id="conteudo">
+		<section id="cursos">
 			<div class="container">
-				<h3 class="subtitulo">Mapa de cursos</h3>
-				<nav class="lista-mapaCursos">
-					<ul>
-						<li>
-							<h4 class="lista-mapaCursos-titulo lista-mapaCursos-backend">Linguagens Backend</h4>
-							<a class="cursos-mapaCursos" href="#">Java</a>
-							<a class="cursos-mapaCursos" href="#">PHP</a>
-							<a class="cursos-mapaCursos" href="#">Pascal</a>
-							<a class="cursos-mapaCursos" href="#">Scala</a>
-							<a class="cursos-mapaCursos" href="#">Python</a>
-							<a class="cursos-mapaCursos" href="#">Java Web</a>
-							<a class="cursos-mapaCursos" href="#">Assembly</a>
-							<a class="cursos-mapaCursos" href="#">Lógica de programação</a>
-						</li>
-						<li>
-							<h4 class="lista-mapaCursos-titulo lista-mapaCursos-frontend">Linguagens Frontend</h4>
-							<a class="cursos-mapaCursos" href="#">Flexbox</a>
-							<a class="cursos-mapaCursos" href="#">Desenvolvimento Web</a>
-							<a class="cursos-mapaCursos" href="#">Javascript</a>
-							<a class="cursos-mapaCursos" href="#">AngularJS</a>
-							<a class="cursos-mapaCursos" href="#">ReactJS</a>
-							<a class="cursos-mapaCursos" href="#">Polymer</a>
-						</li>
-						<li>
-							<h4 class="lista-mapaCursos-titulo lista-mapaCursos-framework">Frameworks</h4>
-							<a class="cursos-mapaCursos" href="#">Ruby on Rails</a>
-							<a class="cursos-mapaCursos" href="#">VRaptor</a>
-							<a class="cursos-mapaCursos" href="#">SpringMVC</a>
-							<a class="cursos-mapaCursos" href="#">NodeJS</a>
-							<a class="cursos-mapaCursos" href="#">Django</a>
-							<a class="cursos-mapaCursos" href="#">Bootstrap3</a>
-						</li>
-						<li>
-							<h4 class="lista-mapaCursos-titulo lista-mapaCursos-bancoDeDados">Banco de dados</h4>
-							<a class="cursos-mapaCursos" href="#">MySQL</a>
-							<a class="cursos-mapaCursos" href="#">MariaDB</a>
-							<a class="cursos-mapaCursos" href="#">Postegres</a>
-						</li>
-					</ul>
+				<h2 class="subtitulo">[ Nossos cursos ]</h2>
 
-				</nav>
-			</div>
-		</section>
-		
-		<section class="videoSobre">
-			<div class="container">
-				<iframe class="videoSobre-video" src="https://www.youtube.com/embed/94yuIVdoevc" frameborder="0"></iframe>
-				
-				<div class="videoSobre-sobre">
-					<h2 class="subtitulo">Vantagens do Alurinha</h2>
-					<ul class="videoSobre-sobre-list">
-						<li class="videoSobre-sobre-item">Estude onde quiser</li>
-						<li class="videoSobre-sobre-item">Novos cursos todos os meses</li>
-						<li class="videoSobre-sobre-item">Cursos compatíveis com o mercado</li>
+				<div>
+					<ul id="grade-cursos">
 					</ul>
-					<button class="videoSobre-button">Cadastre-se já</button>
 				</div>
 			</div>
 		</section>
 
+		<section id="categorias">
+			<div class="container">
+				<h3 class="subtitulo">[ Mapa de cursos ]</h3>
+
+				<nav id="lista-cursos">
+					<ul>
+						<li id="lista-backend">
+							<h4 class="titulo-lista" style="color: #EC6E5A; border-left: 4px solid #EC6E5A;">Linguagens Backend</h4>
+						</li>
+						<li id="lista-frontend">
+							<h4 class="titulo-lista" style="color: #AD85BF; border-left: 4px solid #AD85BF;">Linguagens Frontend</h4>
+						</li>
+						<li id="lista-framework">
+							<h4 class="titulo-lista" style="color: #5EC6F3; border-left: 4px solid #5EC6F3;">Frameworks</h4>
+						</li>
+						<li id="lista-bd">
+							<h4 class="titulo-lista" style="color: #25D285; border-left: 4px solid #25D285;">Banco de dados</h4>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		
+		<section id="vantagens">
+			<iframe id="video" src="https://www.youtube.com/embed/94yuIVdoevc" frameborder="0"></iframe>
+			
+			<div class="container">
+				<h2 class="subtitulo">[ Vantagens do Alurinha ]</h2>
+				<ul>
+					<li>Estude onde quiser</li>
+					<li>Novos cursos todos os meses</li>
+					<li>Cursos compatíveis com o mercado</li>
+				</ul>
+				<button id="botao-cadastro" onclick="redirecionar('form-cadastro.html')">Cadastre-se já</button>
+			</div>
+		</section>
+
+		<div id="botao-voltar">
+			<img src="./assets/seta-cima.png">
+		</div>
 	</main>
 
-	<footer class="rodape">
-
-			<div class="container">
-				<ul class="lista-rodape">
-					<li>
-						<a class="lista-rodape-link lista-rodape-link-alura" href="#">
-							<img src="img/logos/alura.svg" alt="Logo da Alura">
-						</a>
-					</li>
-					<li>
-						<a class="lista-rodape-link lista-rodape-link-caelum" href="#">
-							<img src="img/logos/caelum.svg" alt="Logo da Caelum">
-						</a>
-					</li>
-					<li>
-						<a class="lista-rodape-link lista-rodape-link-casaDoCodigo" href="#">
-							<img src="img/logos/cdc.svg" alt="Logo da Casa do Código">
-						</a>
-					</li>
-				</ul>
-			</div>
-
+	<footer id="rodape">
+		<p>&copy; 2023 by Guilherme Mattos Conde</p>
+		<p>
+			<a href="mailto:guimattos205@gmail.com" target="blank">Gmail</a> |
+			<a href="https://github.com/guilherme-mattos-conde" target="blank">GitHub</a> | 
+			<a href="https://www.linkedin.com/in/guilherme-mattos-conde/" target="blank">Linkedin</a>
+		</p>
 	</footer>
-
+	<script src="js/main.js"></script>
+	<script type="module" src="js/home.js"></script>
 </body>
 </html>
