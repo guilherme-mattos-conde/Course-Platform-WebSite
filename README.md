@@ -1,4 +1,4 @@
-<h1>Alurinha-Cursos-WebSite | Welcome to my repository ✌</h1>
+<h1>Couse-Platform-WebSite | Welcome to my repository ✌</h1>
 
 <p align="justify">In this repository I made a new version of the website proposed on <a href="https://github.com/alura">@alura</a>'s course.</p>
 <p> You can see the result by <a href="https://guilherme-mattos-conde.github.io/Alurinha-Cursos-WebSite/">clicking here</a>.</p>
